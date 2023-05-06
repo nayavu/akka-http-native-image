@@ -3,7 +3,7 @@
 A small example of how to create native image for an Akka HTTP application 
 
 Inspired by [this](https://www.baeldung.com/scala/graalvm) article, 
-but used [sbt-nativeimage](https://github.com/scalameta/sbt-native-image) plugin to automate reflection configuration generation.
+but used [sbt-native-image](https://github.com/scalameta/sbt-native-image) plugin to automate reflection configuration generation.
 
 The problem with building native image for Java apps that highly depends on reflections (which Akka does a lot) is, 
 that you have to explicitly configure all reflections in [reflect-config.json](https://www.graalvm.org/22.0/reference-manual/native-image/Reflection/),
